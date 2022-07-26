@@ -11,7 +11,7 @@ The best way to interact with our API is to use our NodeJS library:
 npm install linearprotocol
 
 ```
-## Create a Node
+## Create a Node           
 
 In the current version of LinearProtocol, we rely on web3.storage APIs for our minting requirements.
 
