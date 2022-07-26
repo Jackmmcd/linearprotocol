@@ -34,6 +34,8 @@ await registerUser(username, seed, nft_token, w3token)
 
 ## Mint Media 
 
+Mint crendential using custom crendential object. 
+
 ### Parameters:
 
 - creator (String): Name of minter
@@ -51,6 +53,44 @@ await mint_nonmedia(creator, itemName, credential_obj, recipient, w3token, accou
 
 ```
 The above function call returns the dweb link that points provides the proposal link necessary recipients to claim media. 
+
+## Claim Crendential Ownership
+
+Claim confirm credential ownership. 
+
+### Parameters:
+
+- creator (String): Name of minter
+- file (String): IPNS file name
+- w3token (String): web3.Storage token of minter
+
+```
+//mint credential
+import {claim_media} from 'linearprotocol/assign'
+
+await mint_nonmedia(creator, file, w3token)
+
+```
+
+## Validate Credential
+
+Validate hisdtory of file and ownership. 
+
+### Parameters:
+
+- creator (String): Name of minter
+- owner (String): Claimed owner of credentials 
+- ipns (String): IPNS file name
+- token (String): web3.Storage token of minter
+
+```
+//mint credential
+import {validate_ownership} from 'linearprotocol/assign'
+
+await mint_nonmedia(creator, owner, ipns,token)
+
+```
+
 
 
 
