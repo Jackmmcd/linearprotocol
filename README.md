@@ -74,7 +74,7 @@ await mint_nonmedia(creator, file, w3token)
 
 ## Validate Credential
 
-Validate hisdtory of file and ownership. 
+Validate history of file and ownership. 
 
 ### Parameters:
 
